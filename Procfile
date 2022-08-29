@@ -1,1 +1,1 @@
-web: gunicorn Spotistats.wsgi
+web: gunicorn wsgi
