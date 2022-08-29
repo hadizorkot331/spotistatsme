@@ -1,0 +1,120 @@
+{% extends "users/layout.html" %}
+
+{% block title %}Index{% endblock %}
+
+{% block body %}
+
+<div style="height: 100%;" class="d-flex justify-content-center align-items-center flex-column">
+    <br>
+    <h1>Recommendations</h1>
+    <br>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col d-flex justify-content-center align-items-center">
+                <div class="card" style="width: 28rem;">
+                    <img src="{{ recs.tracks.0.album.images.0.url }}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ recs.tracks.0.name }}</h5>
+                        <p class="card-text">By {{ recs.tracks.0.artists.0.name}}</p>
+                        <a href="{{ recs.tracks.0.external_urls.spotify }}" class="btn btn-success"
+                            target="_blank">Listen</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col d-flex justify-content-center align-items-center">
+                <div class="card" style="width: 28rem;">
+                    <img src="{{ recs.tracks.1.album.images.0.url }}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ recs.tracks.1.name }}</h5>
+                        <p class="card-text">By {{ recs.tracks.1.artists.0.name}}</p>
+                        <a href="{{ recs.tracks.1.external_urls.spotify }}" class="btn btn-success"
+                            target="_blank">Listen</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col d-flex justify-content-center align-items-center">
+                <div class="card" style="width: 28rem;">
+                    <img src="{{ recs.tracks.2.album.images.0.url }}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ recs.tracks.2.name }}</h5>
+                        <p class="card-text">By {{ recs.tracks.2.artists.0.name}}</p>
+                        <a href="{{ recs.tracks.2.external_urls.spotify }}" class="btn btn-success"
+                            target="_blank">Listen</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col d-flex justify-content-center align-items-center">
+                <div class="card" style="width: 28rem;">
+                    <img src="{{ recs.tracks.3.album.images.0.url }}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ recs.tracks.3.name }}</h5>
+                        <p class="card-text">By {{ recs.tracks.3.artists.0.name}}</p>
+                        <a href="{{ recs.tracks.3.external_urls.spotify }}" class="btn btn-success"
+                            target="_blank">Listen</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <br>
+        <div class="row">
+            <div class="col d-flex justify-content-center align-items-center">
+                <div class="card" style="width: 28rem;">
+                    <img src="{{ recs.tracks.4.album.images.0.url }}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ recs.tracks.4.name }}</h5>
+                        <p class="card-text">By {{ recs.tracks4.artists.0.name}}</p>
+                        <a href="{{ recs.tracks.4.external_urls.spotify }}" class="btn btn-success"
+                            target="_blank">Listen</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col d-flex justify-content-center align-items-center">
+                <div class="card" style="width: 28rem;">
+                    <img src="{{ recs.tracks.5.album.images.0.url }}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ recs.tracks.5.name }}</h5>
+                        <p class="card-text">By {{ recs.tracks.5.artists.0.name}}</p>
+                        <a href="{{ recs.tracks.5.external_urls.spotify }}" class="btn btn-success"
+                            target="_blank">Listen</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <br>
+        <div class="row">
+            <div class="col d-flex justify-content-center align-items-center">
+                <div class="card" style="width: 28rem;">
+                    <img src="{{ recs.tracks.6.album.images.0.url }}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ recs.tracks.6.name }}</h5>
+                        <p class="card-text">By {{ recs.tracks.6.artists.0.name}}</p>
+                        <a href="{{ recs.tracks.6.external_urls.spotify }}" class="btn btn-success"
+                            target="_blank">Listen</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col d-flex justify-content-center align-items-center">
+                <div class="card" style="width: 28rem;">
+                    <img src="{{ recs.tracks.7.album.images.0.url }}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ recs.tracks.7.name }}</h5>
+                        <p class="card-text">By {{ recs.tracks.7.artists.0.name}}</p>
+                        <a href="{{ recs.tracks.7.external_urls.spotify }}" class="btn btn-success"
+                            target="_blank">Listen</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <br>
+    </div>
+</div>
+
+{% endblock %}

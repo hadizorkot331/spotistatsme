@@ -1,0 +1,28 @@
+{% extends 'users/layout.html' %}
+
+{% block title %}Login{% endblock %}
+
+{% block body %}
+
+{% if message %}
+<div class="alert alert-danger" role="alert">
+    {{message}}
+</div>
+{% endif %}
+
+<div class="d-flex justify-content-center align-items-center flex-column" style="height:100%;">
+    <h1>Login</h1>
+    <div class="mb-3">
+        {% load crispy_forms_tags %}
+        <form action="{% url 'users:login' %}" method="POST"
+            class="d-flex flex-column justify-content-center align-items-center">
+            {% csrf_token %}
+            <div class="form-control">
+                {{ form|crispy }}
+            </div>
+            <br>
+            <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+        </form>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,119 @@
+{% extends "users/layout.html" %}
+
+{% block title %}Recents{% endblock %}
+
+{% block body %}
+
+<div style="height: 100%;" class="d-flex justify-content-center align-items-center flex-column">
+    <br>
+    <h1>Recents</h1>
+    <br>
+
+    <div class="container">
+        <div class="row">
+            <div class="col d-flex justify-content-center align-items-center">
+                <div class="card" style="width: 28rem;">
+                    <img src="{{ recents.0.track.album.images.0.url }}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ recents.0.track.name }}</h5>
+                        <p class="card-text">By {{ recents.0.track.artists.0.name}}</p>
+                        <a href="{{ recents.0.track.external_urls.spotify }}" class="btn btn-success"
+                            target="_blank">Listen</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col d-flex justify-content-center align-items-center">
+                <div class="card" style="width: 28rem;">
+                    <img src="{{ recents.1.track.album.images.0.url }}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ recents.1.track.name }}</h5>
+                        <p class="card-text">By {{ recents.1.track.artists.0.name}}</p>
+                        <a href="{{ recents.1.track.external_urls.spotify }}" class="btn btn-success"
+                            target="_blank">Listen</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col d-flex justify-content-center align-items-center">
+                <div class="card" style="width: 28rem;">
+                    <img src="{{ recents.2.track.album.images.0.url }}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ recents.2.track.name }}</h5>
+                        <p class="card-text">By {{ recents.tracks2.artists.0.name}}</p>
+                        <a href="{{ recents.2.track.external_urls.spotify }}" class="btn btn-success"
+                            target="_blank">Listen</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col d-flex justify-content-center align-items-center">
+                <div class="card" style="width: 28rem;">
+                    <img src="{{ recents.3.track.album.images.0.url }}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ recents.3.track.name }}</h5>
+                        <p class="card-text">By {{ recents.3.track.artists.0.name}}</p>
+                        <a href="{{ recents.3.track.external_urls.spotify }}" class="btn btn-success"
+                            target="_blank">Listen</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <br>
+        <div class="row">
+            <div class="col d-flex justify-content-center align-items-center">
+                <div class="card" style="width: 28rem;">
+                    <img src="{{ recents.4.track.album.images.0.url }}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ recents.4.track.name }}</h5>
+                        <p class="card-text">By {{ recents.4.track.artists.0.name}}</p>
+                        <a href="{{ recents.4.track.external_urls.spotify }}" class="btn btn-success"
+                            target="_blank">Listen</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col d-flex justify-content-center align-items-center">
+                <div class="card" style="width: 28rem;">
+                    <img src="{{ recents.5.track.album.images.0.url }}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ recents.5.track.name }}</h5>
+                        <p class="card-text">By {{ recents.5.track.artists.0.name}}</p>
+                        <a href="{{ recents.5.track.external_urls.spotify }}" class="btn btn-success"
+                            target="_blank">Listen</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <br>
+        <div class="row">
+            <div class="col d-flex justify-content-center align-items-center">
+                <div class="card" style="width: 28rem;">
+                    <img src="{{ recents.6.track.album.images.0.url }}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ recents.6.track.name }}</h5>
+                        <p class="card-text">By {{ recents.6.track.artists.0.name}}</p>
+                        <a href="{{ recents.6.track.external_urls.spotify }}" class="btn btn-success"
+                            target="_blank">Listen</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col d-flex justify-content-center align-items-center">
+                <div class="card" style="width: 28rem;">
+                    <img src="{{ recents.7.track.album.images.0.url }}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ recents.7.track.name }}</h5>
+                        <p class="card-text">By {{ recents.7.track.artists.0.name}}</p>
+                        <a href="{{ recents.7.track.external_urls.spotify }}" class="btn btn-success"
+                            target="_blank">Listen</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <br>
+    </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,10 @@
+body {
+    background-image: url(background1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+h1 {
+    color: rgb(226, 226, 226);
+}

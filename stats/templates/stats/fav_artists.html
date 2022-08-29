@@ -1,0 +1,21 @@
+{% extends 'users/layout.html' %}
+
+{% block titel %}Favorite Artist{% endblock %}
+
+{% block body %}
+{% load humanize %}
+<div style="height: 100%;" class="d-flex justify-content-center align-items-center flex-column">
+    <br>
+    {% for artist in favorite_artists %}
+    <div class="card" style="max-width: 36rem;">
+        <img src="{{artist.images.0.url}}" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">{{artist.name}}</h5>
+            <p class="card-text">{{artist.followers.total|intcomma}} Followers</p>
+            <a href="{{ artist.external_urls.spotify }}" class="btn btn-success" target="_blank">Check Out</a>
+        </div>
+    </div>
+    <br>
+    {% endfor %}
+</div>
+{% endblock %}
